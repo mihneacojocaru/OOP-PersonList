@@ -18,16 +18,16 @@ class User {
         return text;
     }
 
-    // createHTML = () => { let card = `
-    // <div class="card">
-    //     <h3>${this.nume} ${this.prenume}</h3>
-    //     <p>Born in: ${this.anulNasterii}</p>
-    //     <p>Country: ${this.tara}</p>
-    // </div>
-    //  `;
+    createHTML = () => { let card = `
+    <div class="card">
+        <h3>${this.nume} ${this.prenume}</h3>
+        <p>Born in: ${this.anulNasterii}</p>
+        <p>Country: ${this.tara}</p>
+    </div>
+     `;
 
-    //  return card;
-    // } 
+     return card;
+    } 
 
 }
 
