@@ -1,0 +1,25 @@
+const user1 = new User(1,"John","Doe",1980,"England");
+const user2 = new User(2,"Teresa","Lohse",1975,"Germany");
+const user3 = new User(3,"Edith","Hoyer",1982,"England");
+const user4 = new User(4,"Konstantin","Lechner",1991,"Austria");
+const user5 = new User(5,"Karin","Krieg",1975,"Switzerland");
+const user6 = new User(6,"Christopher","Brandl",1999,"Norway");
+const user7 = new User(7,"Uta","Hauck",1987,"Germany");
+const user8 = new User(8,"Sebastian","Koller",1984,"Sweeden");
+const user9 = new User(9,"Hatice","Hollmann",1971,"Denmark");
+const user10 = new User(10,"Mary","Niemann",1980,"Belgium");
+const user11 = new User(11,"Arne","Eggers",1980,"Netherlands");
+const user12 = new User(12,"Arthur","Bartels",1980,"Luxenbourg");
+
+localStorage.setItem(user1.id,JSON.stringify(user1));
+localStorage.setItem(user2.id,JSON.stringify(user2));
+localStorage.setItem(user3.id,JSON.stringify(user3));
+localStorage.setItem(user4.id,JSON.stringify(user4));
+localStorage.setItem(user5.id,JSON.stringify(user5));
+localStorage.setItem(user6.id,JSON.stringify(user6));
+localStorage.setItem(user7.id,JSON.stringify(user7));
+localStorage.setItem(user8.id,JSON.stringify(user8));
+localStorage.setItem(user9.id,JSON.stringify(user9));
+localStorage.setItem(user10.id,JSON.stringify(user10));
+localStorage.setItem(user11.id,JSON.stringify(user11));
+localStorage.setItem(user12.id,JSON.stringify(user12));

@@ -1,0 +1,42 @@
+1) Initiere:
+
+Forma generala: 
+
+    class a {
+        constructor(lista parametrii){
+
+        }
+
+        // metode
+    }
+
+Initiere (Crearea unui obiect)
+
+let x = new A();
+
+Constructorul --> Este o metoda ce se apeleaza automat la crearea unui obiect.
+
+OBS! Exista doua formate in care se salveaza datele:
+
+JSON: Javascript Object Notation
+
+Client = {
+    "id" : 17,
+    "nume": "exemplu"
+}
+
+XML
+
+<client>
+    <id>17</id>
+    <nume>exemplu</nume>
+</client>
+
+
+Serializare: JS Object --> JSON
+Deserializare: JSON --> JS Object
+
+localStorage.setItem(x.id, JSON.stringify(x));
+
+MVC = model view controller
+CRUD = create read update delete
