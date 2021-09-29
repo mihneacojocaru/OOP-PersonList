@@ -76,18 +76,15 @@ class ControllUser {
 
     createHTML = () => { 
         
-        let cont = document.getElementById('main');
-        cont.innerHTML = "";
-        this.list.forEach( el => {
-            let card = `
+        let card = `
     <div class="card">
-        <h3>${el.nume} ${el.prenume}</h3>
-        <p>Born in: ${el.anulNasterii}</p>
-        <p>Country: ${el.tara}</p>
+        <h3>${this.nume} ${this.prenume}</h3>
+        <p>Born in: ${this.anulNasterii}</p>
+        <p>Country: ${this.tara}</p>
     </div>
      `;
-     cont.innerHTML += card;
-    })
+
+     return card;
     } 
 
     createCard = (nume, prenume, an, tara) => {

@@ -1,10 +1,7 @@
 
 import User from "./model/people.js"
 import ControllUser from "./controller/readPeople.js";
+import ViewMain from "./view/virewMain.js";
 
 
-let x = new ControllUser();
-
-
-x.createHTML();
-
+let main = new ViewMain();
