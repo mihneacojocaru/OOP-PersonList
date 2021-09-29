@@ -35,6 +35,45 @@ class ControllUser {
         })
     }
 
+    updateAnulNasterii(nume,prenume,anulNasterii){
+        this.list.forEach( e => {
+            if(e.nume == nume && e.prenume == prenume){
+                e.anulNasterii = anulNasterii;
+            }
+        });
+    }
+
+    updateTara(nume, prenume, tara){
+
+        this.list.forEach(e => {
+
+            if(e.nume == nume && e.prenume == prenume){
+                e.tara = tara;
+            }
+
+        })
+    }
+
+    deleteElement(id){
+
+        let x = this.list.filter( e => e.id != id);
+
+        this.list.clear;
+
+        this.list =[...x];
+
+    }
+
+    save = () => {
+        localStorage.clear();
+
+        this.list.forEach( e => {
+
+            localStorage.setItem(e.id, JSON.stringify(e));
+        });
+    }
+
+
     createHTML = () => { 
         
         let cont = document.getElementById('main');
